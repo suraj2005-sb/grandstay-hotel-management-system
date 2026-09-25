@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GrandStay | Luxury Hotel</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <span>G</span> GrandStay
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#rooms">Rooms</a>
+            <a href="#services">Services</a>
+            <a href="#booking">Booking</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <a href="#booking" class="nav-btn">Book Now</a>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <p class="small-title">WELCOME TO GRANDSTAY</p>
+
+            <h1>
+                Experience Luxury.<br>
+                <span>Stay Extraordinary.</span>
+            </h1>
+
+            <p class="hero-text">
+                Discover a perfect blend of luxury, comfort and
+                unforgettable hospitality.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#booking" class="primary-btn">
+                    Reserve Your Stay
+                </a>
+
+                <a href="#rooms" class="secondary-btn">
+                    Explore Rooms
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= QUICK BOOKING ================= -->
+
+    <section class="quick-booking">
+
+        <div class="booking-item">
+            <span>📅</span>
+            <div>
+                <small>CHECK IN</small>
+                <p>Select Date</p>
+            </div>
+        </div>
+
+        <div class="booking-item">
+            <span>📅</span>
+            <div>
+                <small>CHECK OUT</small>
+                <p>Select Date</p>
+            </div>
+        </div>
+
+        <div class="booking-item">
+            <span>👤</span>
+            <div>
+                <small>GUESTS</small>
+                <p>2 Adults</p>
+            </div>
+        </div>
+
+        <a href="#booking" class="search-btn">
+            Check Availability
+        </a>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section class="about">
+
+        <div class="about-image">
+
+            <div class="experience-card">
+                <strong>15+</strong>
+                <span>Years of<br>Excellence</span>
+            </div>
+
+        </div>
+
+        <div class="about-content">
+
+            <p class="section-label">ABOUT GRANDSTAY</p>
+
+            <h2>
+                Where every stay becomes
+                a <span>beautiful memory.</span>
+            </h2>
+
+            <p>
+                GrandStay Hotel offers a luxurious escape designed
+                for guests who appreciate comfort, elegance and
+                exceptional service.
+            </p>
+
+            <p>
+                From beautifully designed rooms to world-class
+                facilities, every detail is created to make your
+                stay truly special.
+            </p>
+
+            <a href="#services" class="text-btn">
+                Discover More →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ROOMS ================= -->
+
+    <section id="rooms" class="rooms">
+
+        <div class="section-heading">
+
+            <div>
+                <p class="section-label">OUR ROOMS</p>
+
+                <h2>
+                    Find your perfect
+                    <span>stay.</span>
+                </h2>
+            </div>
+
+            <p>
+                Carefully designed rooms combining modern
+                elegance with ultimate comfort.
+            </p>
+
+        </div>
+
+
+        <div class="room-container">
+
+
+            <!-- ROOM 1 -->
+
+            <div class="room-card">
+
+                <div class="room-image room-one">
+
+                    <span class="room-tag">
+                        POPULAR
+                    </span>
+
+                    <button class="heart-btn">♡</button>
+
+                </div>
+
+                <div class="room-info">
+
+                    <div class="room-title">
+
+                        <h3>Deluxe Room</h3>
+
+                        <span>★★★★★</span>
+
+                    </div>
+
+                    <p>
+                        Elegant room with a comfortable
+                        king-size bed and modern amenities.
+                    </p>
+
+                    <div class="room-bottom">
+
+                        <div>
+                            <small>FROM</small>
+                            <strong>₹2,500</strong>
+                            <small>/ NIGHT</small>
+                        </div>
+
+                        <button onclick="selectRoom('Deluxe Room')">
+                            Book
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ROOM 2 -->
+
+            <div class="room-card">
+
+                <div class="room-image room-two">
+
+                    <span class="room-tag">
+                        LUXURY
+                    </span>
+
+                    <button class="heart-btn">♡</button>
+
+                </div>
+
+                <div class="room-info">
+
+                    <div class="room-title">
+
+                        <h3>Executive Suite</h3>
+
+                        <span>★★★★★</span>
+
+                    </div>
+
+                    <p>
+                        Spacious suite featuring a private
+                        living area and premium facilities.
+                    </p>
+
+                    <div class="room-bottom">
+
+                        <div>
+                            <small>FROM</small>
+                            <strong>₹4,500</strong>
+                            <small>/ NIGHT</small>
+                        </div>
+
+                        <button onclick="selectRoom('Executive Suite')">
+                            Book
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ROOM 3 -->
+
+            <div class="room-card">
+
+                <div class="room-image room-three">
+
+                    <span class="room-tag">
+                        PREMIUM
+                    </span>
+
+                    <button class="heart-btn">♡</button>
+
+                </div>
+
+                <div class="room-info">
+
+                    <div class="room-title">
+
+                        <h3>Presidential Suite</h3>
+
+                        <span>★★★★★</span>
+
+                    </div>
+
+                    <p>
+                        The ultimate luxury experience with
+                        premium interiors and stunning views.
+                    </p>
+
+                    <div class="room-bottom">
+
+                        <div>
+                            <small>FROM</small>
+                            <strong>₹8,000</strong>
+                            <small>/ NIGHT</small>
+                        </div>
+
+                        <button onclick="selectRoom('Presidential Suite')">
+                            Book
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SERVICES ================= -->
+
+    <section id="services" class="services">
+
+        <div class="section-heading center">
+
+            <p class="section-label">HOTEL SERVICES</p>
+
+            <h2>
+                Everything you need,
+                <span>and more.</span>
+            </h2>
+
+        </div>
+
+
+        <div class="service-container">
+
+            <div class="service-card">
+                <div>🍽️</div>
+                <h3>Fine Dining</h3>
+                <p>Experience delicious cuisine prepared by expert chefs.</p>
+            </div>
+
+            <div class="service-card">
+                <div>🏊</div>
+                <h3>Swimming Pool</h3>
+                <p>Relax and refresh yourself in our luxury pool.</p>
+            </div>
+
+            <div class="service-card">
+                <div>💆</div>
+                <h3>Spa & Wellness</h3>
+                <p>Enjoy relaxing treatments designed for complete wellness.</p>
+            </div>
+
+            <div class="service-card">
+                <div>🏋️</div>
+                <h3>Fitness Center</h3>
+                <p>Stay active with our modern fitness facilities.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= DASHBOARD ================= -->
+
+    <section class="dashboard">
+
+        <div class="dashboard-title">
+
+            <p class="section-label">HOTEL OVERVIEW</p>
+
+            <h2>GrandStay <span>Dashboard</span></h2>
+
+        </div>
+
+
+        <div class="stats-container">
+
+            <div class="stat-card">
+                <span>🏨</span>
+                <div>
+                    <small>Total Rooms</small>
+                    <strong>120</strong>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <span>🟢</span>
+                <div>
+                    <small>Available Rooms</small>
+                    <strong id="availableRooms">84</strong>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <span>📋</span>
+                <div>
+                    <small>Today's Bookings</small>
+                    <strong id="bookings">36</strong>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <span>⭐</span>
+                <div>
+                    <small>Guest Rating</small>
+                    <strong>4.9</strong>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= BOOKING ================= -->
+
+    <section id="booking" class="booking-section">
+
+        <div class="booking-heading">
+
+            <p class="section-label">RESERVATION</p>
+
+            <h2>
+                Book your
+                <span>perfect stay.</span>
+            </h2>
+
+            <p>
+                Fill in your details and we'll take care
+                of the rest.
+            </p>
+
+        </div>
+
+
+        <form id="bookingForm">
+
+            <div class="form-row">
+
+                <div class="input-group">
+                    <label>Full Name</label>
+                    <input type="text" id="guestName"
+                           placeholder="Enter your name" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Email Address</label>
+                    <input type="email" id="guestEmail"
+                           placeholder="Enter your email" required>
+                </div>
+
+            </div>
+
+
+            <div class="form-row">
+
+                <div class="input-group">
+                    <label>Check In</label>
+                    <input type="date" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Check Out</label>
+                    <input type="date" required>
+                </div>
+
+            </div>
+
+
+            <div class="form-row">
+
+                <div class="input-group">
+                    <label>Room Type</label>
+
+                    <select id="roomSelect" required>
+
+                        <option value="">
+                            Select Room
+                        </option>
+
+                        <option value="Deluxe Room">
+                            Deluxe Room - ₹2,500
+                        </option>
+
+                        <option value="Executive Suite">
+                            Executive Suite - ₹4,500
+                        </option>
+
+                        <option value="Presidential Suite">
+                            Presidential Suite - ₹8,000
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label>Guests</label>
+
+                    <select required>
+
+                        <option>1 Guest</option>
+                        <option>2 Guests</option>
+                        <option>3 Guests</option>
+                        <option>4 Guests</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <button type="submit" class="booking-submit">
+                Confirm Reservation →
+            </button>
+
+            <p id="bookingMessage"></p>
+
+        </form>
+
+    </section>
+
+
+    <!-- ================= TESTIMONIALS ================= -->
+
+    <section class="testimonials">
+
+        <div class="section-heading center">
+
+            <p class="section-label">GUEST REVIEWS</p>
+
+            <h2>
+                Loved by our
+                <span>guests.</span>
+            </h2>
+
+        </div>
+
+
+        <div class="review-container">
+
+            <div class="review-card">
+
+                <div class="stars">★★★★★</div>
+
+                <p>
+                    "Absolutely beautiful hotel. The rooms were
+                    elegant, clean and extremely comfortable."
+                </p>
+
+                <strong>Rahul Mehta</strong>
+                <small>Business Traveler</small>
+
+            </div>
+
+
+            <div class="review-card">
+
+                <div class="stars">★★★★★</div>
+
+                <p>
+                    "Amazing experience from check-in to check-out.
+                    The service was truly exceptional."
+                </p>
+
+                <strong>Priya Sharma</strong>
+                <small>Family Guest</small>
+
+            </div>
+
+
+            <div class="review-card">
+
+                <div class="stars">★★★★★</div>
+
+                <p>
+                    "One of the best hotel experiences I've had.
+                    Definitely coming back again."
+                </p>
+
+                <strong>Arjun Kapoor</strong>
+                <small>Verified Guest</small>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer id="contact">
+
+        <div class="footer-content">
+
+            <div>
+
+                <div class="logo">
+                    <span>G</span> GrandStay
+                </div>
+
+                <p>
+                    Luxury hospitality crafted
+                    for unforgettable stays.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>Explore</h3>
+
+                <a href="#home">Home</a>
+                <a href="#rooms">Rooms</a>
+                <a href="#services">Services</a>
+                <a href="#booking">Booking</a>
+
+            </div>
+
+
+            <div>
+
+                <h3>Contact</h3>
+
+                <p>📍 Pune, Maharashtra</p>
+                <p>📞 +91 98765 43210</p>
+                <p>✉️ hello@grandstay.com</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 GrandStay Hotel. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

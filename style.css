@@ -1,0 +1,294 @@
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+
+:root{
+--gold:#c9a227;
+--dark:#111;
+--light:#f7f5f0;
+--text:#555
+}
+
+body{font-family:Arial,sans-serif;background:var(--light);color:var(--dark);line-height:1.6;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+button,input,select{font:inherit}
+
+
+/* NAVBAR */
+
+.navbar{
+position:absolute;top:0;left:0;width:100%;z-index:10;
+display:flex;align-items:center;justify-content:space-between;
+padding:22px 7%;color:white
+}
+
+.logo{font-size:24px;font-weight:bold}
+.logo span{color:var(--gold);font-size:32px}
+
+.navbar nav{display:flex;gap:30px}
+.navbar nav a{font-size:14px;transition:.3s}
+.navbar nav a:hover{color:var(--gold)}
+
+.nav-btn{
+border:1px solid var(--gold);padding:10px 20px;transition:.3s
+}
+.nav-btn:hover{background:var(--gold)}
+
+
+/* HERO */
+
+.hero{
+height:100vh;min-height:650px;padding:0 7%;
+display:flex;align-items:center;position:relative;color:white;
+background:url("images/photo-1566073771259-6a8506099945.avif") center/cover
+}
+
+.hero-overlay{
+position:absolute;inset:0;
+background:linear-gradient(90deg,rgba(0,0,0,.85),rgba(0,0,0,.35),rgba(0,0,0,.15))
+}
+
+.hero-content{position:relative;z-index:2;max-width:750px}
+.small-title,.section-label{
+color:var(--gold);letter-spacing:4px;font-size:11px;font-weight:bold;margin-bottom:15px
+}
+
+.hero h1{
+font-family:Georgia,serif;font-size:clamp(45px,7vw,90px);
+line-height:1.05;margin-bottom:22px
+}
+
+.hero h1 span{color:var(--gold)}
+.hero-text{max-width:550px;color:#ddd;margin-bottom:30px}
+
+.hero-buttons{display:flex;gap:15px}
+.primary-btn,.secondary-btn{padding:14px 25px;transition:.3s}
+.primary-btn{background:var(--gold)}
+.primary-btn:hover{transform:translateY(-3px)}
+.secondary-btn{border:1px solid white}
+.secondary-btn:hover{background:white;color:#111}
+
+
+/* QUICK BOOKING */
+
+.quick-booking{
+width:86%;margin:-55px auto 0;position:relative;z-index:5;
+background:white;box-shadow:0 15px 45px #0002;
+display:grid;grid-template-columns:repeat(3,1fr) 1.2fr
+}
+
+.booking-item{
+padding:22px;display:flex;gap:12px;align-items:center;border-right:1px solid #eee
+}
+
+.booking-item span{font-size:23px}
+.booking-item small{color:#999;font-size:9px;letter-spacing:2px}
+.booking-item p{font-weight:bold}
+
+.search-btn{
+margin:18px;padding:16px;text-align:center;background:var(--dark);color:white
+}
+.search-btn:hover{background:var(--gold)}
+
+
+/* COMMON SECTIONS */
+
+.about,.rooms,.services,.dashboard,.booking-section,.testimonials{padding:100px 7%}
+
+.about{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+
+.about-image{
+height:550px;position:relative;
+background:url("images/photo-1582719478250-c89cae4dc85b.avif") center/cover
+}
+
+.experience-card{
+position:absolute;right:-30px;bottom:35px;background:var(--gold);color:white;
+padding:22px;display:flex;gap:12px;align-items:center
+}
+
+.experience-card strong{font-size:40px;line-height:1}
+
+.about-content h2,.section-heading h2,.booking-heading h2,.dashboard-title h2{
+font-family:Georgia,serif;font-size:45px;line-height:1.15;margin-bottom:22px
+}
+
+.about-content h2 span,.section-heading h2 span,.booking-heading h2 span,.dashboard-title h2 span{color:var(--gold)}
+.about-content>p:not(.section-label){color:var(--text);margin-bottom:15px}
+.text-btn{color:var(--gold);font-weight:bold}
+
+
+/* ROOMS */
+
+.rooms{background:white}
+.section-heading{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:50px}
+.section-heading>p{max-width:400px;color:var(--text)}
+
+.room-container{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}
+
+.room-card{background:var(--light);transition:.4s}
+.room-card:hover{transform:translateY(-8px);box-shadow:0 20px 40px #0002}
+
+.room-image{height:290px;position:relative;background-size:cover;background-position:center}
+.room-one{background-image:url("images/photo-1611892440504-42a792e24d32.avif")}
+.room-two{background-image:url("images/photo-1590490360182-c33d57733427.avif")}
+.room-three{background-image:url("images/photo-1584132967334-10e028bd69f7.avif")}
+
+.room-tag{
+position:absolute;top:18px;left:18px;background:var(--gold);color:white;
+padding:6px 10px;font-size:9px
+}
+
+.heart-btn{
+position:absolute;top:15px;right:15px;width:38px;height:38px;
+border:0;border-radius:50%;background:white;cursor:pointer;font-size:19px
+}
+
+.room-info{padding:22px}
+.room-title{display:flex;justify-content:space-between;gap:8px}
+.room-title h3{font-family:Georgia,serif;font-size:22px}
+.room-title span{color:var(--gold);font-size:11px}
+.room-info>p{color:var(--text);font-size:13px;margin:10px 0 20px}
+
+.room-bottom{
+border-top:1px solid #ddd;padding-top:16px;
+display:flex;justify-content:space-between;align-items:center
+}
+
+.room-bottom small{font-size:8px;color:#888}
+.room-bottom strong{font-size:19px}
+.room-bottom button{
+border:0;background:var(--dark);color:white;padding:9px 18px;cursor:pointer
+}
+.room-bottom button:hover{background:var(--gold)}
+
+
+/* SERVICES */
+
+.services{background:var(--dark);color:white}
+.center{text-align:center}
+.service-container{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.service-card{
+padding:30px 20px;text-align:center;border:1px solid #333;transition:.3s
+}
+.service-card:hover{border-color:var(--gold);transform:translateY(-6px)}
+.service-card>div{font-size:36px;margin-bottom:15px}
+.service-card p{color:#aaa;font-size:13px}
+
+
+/* DASHBOARD */
+
+.dashboard{background:#f0ede5}
+.stats-container{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+
+.stat-card{
+background:white;padding:25px;display:flex;align-items:center;gap:15px;
+box-shadow:0 8px 25px #0001
+}
+
+.stat-card>span{font-size:28px}
+.stat-card small{display:block;color:#888;font-size:11px}
+.stat-card strong{display:block;font-size:28px}
+
+
+/* BOOKING */
+
+.booking-heading{text-align:center;max-width:650px;margin:0 auto 45px}
+.booking-heading>p:last-child{color:var(--text)}
+
+#bookingForm{
+max-width:850px;margin:auto;background:var(--light);padding:40px;
+box-shadow:0 20px 50px #0001
+}
+
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-bottom:22px}
+.input-group label{display:block;font-size:11px;font-weight:bold;margin-bottom:7px}
+.input-group input,.input-group select{
+width:100%;padding:14px;border:1px solid #ddd;outline:0;background:white
+}
+.input-group input:focus,.input-group select:focus{border-color:var(--gold)}
+
+.booking-submit{
+width:100%;padding:16px;border:0;background:var(--dark);color:white;cursor:pointer
+}
+.booking-submit:hover{background:var(--gold)}
+#bookingMessage{text-align:center;margin-top:18px;color:#218838;font-weight:bold}
+
+
+/* REVIEWS */
+
+.testimonials{background:var(--light)}
+.review-container{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.review-card{background:white;padding:30px;box-shadow:0 10px 30px #0001}
+.stars{color:var(--gold);letter-spacing:3px;margin-bottom:18px}
+.review-card p{color:var(--text);margin-bottom:20px}
+.review-card strong,.review-card small{display:block}
+.review-card small{color:#999}
+
+
+/* FOOTER */
+
+footer{background:#0b0b0b;color:white;padding:65px 7% 0}
+.footer-content{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px}
+.footer-content>div>p{color:#999;margin-top:12px}
+.footer-content h3{margin-bottom:15px}
+.footer-content a{display:block;color:#999;margin-bottom:7px}
+.footer-content a:hover{color:var(--gold)}
+.footer-bottom{margin-top:50px;padding:20px 0;border-top:1px solid #222;text-align:center;color:#777;font-size:12px}
+
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+.navbar nav{display:none}
+.about{grid-template-columns:1fr}
+.room-container{grid-template-columns:1fr 1fr}
+.service-container,.stats-container{grid-template-columns:1fr 1fr}
+.quick-booking{grid-template-columns:1fr 1fr}
+.review-container{grid-template-columns:1fr 1fr}
+}
+
+@media(max-width:600px){
+
+.navbar{padding:15px 20px}
+.nav-btn{padding:8px 14px;font-size:12px}
+
+.hero{width:100%;min-height:100vh;padding:120px 20px 60px}
+.hero-content{width:100%;max-width:100%}
+.hero h1{font-size:40px;max-width:100%;overflow-wrap:break-word}
+.hero-text{font-size:14px}
+.hero-buttons{flex-direction:column;width:100%;max-width:280px}
+.hero-buttons a{text-align:center}
+
+.quick-booking{
+width:90%;margin-top:-30px;grid-template-columns:1fr
+}
+
+.booking-item{border-right:0;border-bottom:1px solid #eee}
+.search-btn{margin:15px}
+
+.about,.rooms,.services,.dashboard,.booking-section,.testimonials{
+padding:70px 20px;width:100%
+}
+
+.about-image{height:350px}
+.experience-card{right:10px;padding:17px}
+.experience-card strong{font-size:32px}
+
+.about-content h2,.section-heading h2,.booking-heading h2,.dashboard-title h2{
+font-size:34px
+}
+
+.section-heading{display:block}
+.section-heading>p{margin-top:15px}
+
+.room-container,.service-container,.stats-container,.review-container{
+grid-template-columns:1fr
+}
+
+.room-image{height:260px}
+
+.form-row{grid-template-columns:1fr}
+#bookingForm{padding:25px 18px}
+
+.footer-content{grid-template-columns:1fr}
+footer{padding:55px 20px 0}
+}
